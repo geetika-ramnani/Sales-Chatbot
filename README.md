@@ -78,28 +78,3 @@ uvicorn app.main:app --reload
 ## 🧠 Model Integration
 
 This project uses **Groq's `llama-3.3-70b-versatile`** via their API for AI-based dynamic responses. You can modify the logic in `app/chatbot.py` to tailor responses based on your use case.
-
-
-## 📦 Deployment
-
-You can deploy the app using Docker:
-
-```bash
-docker build -t fastapi-chatbot .
-docker run -p 8000:8000 fastapi-chatbot
-```
-
-
-## 📄 License
-
-MIT License. See [LICENSE](LICENSE) for details.
-
-
-## ✨ Contributions
-
-Pull requests are welcome! For major changes, please open an issue first to discuss your ideas.
-
-
-## 📬 Contact
-
-For support or questions, contact jimitchavdadev@gmail.com.
