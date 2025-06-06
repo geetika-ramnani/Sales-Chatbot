@@ -44,7 +44,7 @@ class Chatbot:
             User: {user_message}
             Bot:
             """
-
+            
             # Call Groq API
             try:
                 response = self.client.chat.completions.create(
@@ -57,6 +57,7 @@ class Chatbot:
                 )
                 bot_response = response.choices[0].message.content.strip()
             except Exception as e:
+                print("Groq API error:", e)
                 bot_response = "Sorry, I couldn't process your request due to a technical issue. Please try again or contact support."
 
         # Save conversation to MongoDB
