@@ -10,7 +10,7 @@ function sendMessage() {
     userInput.value = '';
 
     // Send request to backend
-    fetch('http://localhost:8000/chat', {
+    fetch('https://sales-chatbot-67wi.onrender.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
